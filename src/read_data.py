@@ -75,9 +75,22 @@ if __name__ == "__main__":
     dist = np.sum(train_data_features, axis=0)
     # Define Categories
     categories = []
-    categories.append(('resturentGeneral', 'RESTAURANT#GENERAL'))
-    categories.append(('resturentPrice', 'RESTAURANT#PRICES'))
-    categories.append(('resturentMiscellaneous', 'RESTAURANT#MISCELLANEOUS'))
+    categories.append(('restaurantGeneral', 'RESTAURANT#GENERAL'))
+    categories.append(('restaurantPrice', 'RESTAURANT#PRICES'))
+    categories.append(('restaurantMiscellaneous', 'RESTAURANT#MISCELLANEOUS'))
+    
+    categories.append(('foodPrice', 'FOOD#PRICES'))
+    categories.append(('foodQuality', 'FOOD#QUALITY'))
+    categories.append(('foodStyleOptions', 'FOOD#STYLE_OPTIONS'))
+    
+    categories.append(('drinksPrice', 'DRINKS#PRICES'))
+    categories.append(('drinksQuality', 'DRINKS#QUALITY'))
+    categories.append(('drinksStyleOptions', 'DRINKS#STYLE_OPTIONS'))
+    
+    categories.append(('ambienceGeneral', 'AMBIENCE#GENERAL'))
+    categories.append(('serviceGeneral', 'SERVICE#GENERAL'))
+    categories.append(('locationGeneral', 'LOCATION#GENERAL'))
+    
     for name, category in categories:
         #
         # For each, print the vocabulary word and the number of times it 

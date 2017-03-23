@@ -33,7 +33,7 @@ models = []
 models.append(('SVM', SVC()))
 #
 # evaluate each model in turn
-def cross_val(features, labels, seed = 7, scoring = 'f1'):
+def cross_val(features, labels, seed = 7, scoring = 'accuracy'):
     results = []
     names = []
     for name, model in models:
